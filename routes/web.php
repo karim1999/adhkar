@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function(){
 	$azkar=\App\Azkar::where('category_id',1)->get();
-	return view('index',compact('azkar'));
+	return view('index',compact('azkar'), ["is_home"=> true]);
 })->name('home');
 Route::get('/cat/{category}','DataController@index')->name('category');
 Route::get('/update_mode', 'ApiController@update_dark_mode_session');

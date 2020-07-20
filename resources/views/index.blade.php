@@ -88,7 +88,9 @@
         </nav>
     </div>
     <section class="to-top mb-5">
+        @if(isset($is_home))
         <img style="margin-left: auto; margin-right: auto; display: block;" src="{{asset('img/title.png')}}" alt="">
+        @endif
         <div class="container">
             <div class="container2">
                 <div class="row m-2">
