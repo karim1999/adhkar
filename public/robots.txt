@@ -1,2 +1,3 @@
 User-agent: *
 Disallow:
+Sitemap: http://adhkar.net/sitemap.xml
